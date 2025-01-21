@@ -4,6 +4,8 @@ import requests  # HTTP requests module for API calls
 from datetime import datetime  # Module for handling dates and timestamps
 import csv  # Module for writing to CSV files
 
+# INTERCOM_PROD_KEY = ''
+
 # Removes HTML tags from a given text
 def remove_html_tags(text):
     clean = re.sub(r'<.*?>', '', text)  # Uses a regex to replace HTML tags with an empty string
@@ -156,3 +158,9 @@ def main_function():
 
 # Entry point of the script
 main_function()
+
+#ticket = get_intercom_conversation(505032)
+#print(ticket['statistics']['last_close_at'])
+# print(get_conversation_transcript(ticket))
+# print(get_conversation_csat_remark(ticket))
+# print(get_conversation_summary(ticket))
